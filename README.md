@@ -29,6 +29,6 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## Resource
 
-The starter code provided by Udacity and all the tests coded by me .
+The starter code provided by Udacity and the tests coded by me .
 
 
