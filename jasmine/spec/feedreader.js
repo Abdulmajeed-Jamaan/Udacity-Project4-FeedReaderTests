@@ -85,9 +85,7 @@ $(function () {
     describe('Initial Entries', function () {
 
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                done();
-            });
+            loadFeed(0, done);
         });
 
         /* TODO: Write a test that ensures when the loadFeed
@@ -98,7 +96,8 @@ $(function () {
         */
         it('have at least one entry', function (done) {
             const container = document.querySelector('.feed');
-            expect(container.childNodes.length).not.toBe(0);
+            const entry = container.querySelectorAll('.entry');
+            expect(entry.length).toBeGreaterThan(0);
             done();
         });
 
@@ -107,9 +106,7 @@ $(function () {
     describe('New Feed Selection', function () {
 
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                done();
-            });
+            loadFeed(0, done);
         });
 
         /* TODO: Write a test that ensures when a new feed is loaded
